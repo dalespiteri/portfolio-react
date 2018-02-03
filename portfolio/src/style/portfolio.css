@@ -1,6 +1,3 @@
 .portfolioContainer {
   background-color: purple;
-  animation-name: fallIn;
-  animation-duration: 3500ms;
-  animation-iteration-count: infinite;
 }

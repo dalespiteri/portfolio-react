@@ -5,7 +5,7 @@ class Portfolio extends Component {
   render() {
 
     return (
-      <div className="portfolioContainer pageContainer">
+      <div className={"portfolioContainer pageContainer " + this.props.className}>
 
       </div>
   );

@@ -61,11 +61,11 @@ class App extends Component {
       { this.state.subActivePage === 'contact' ? <Contact /> : null }
       </div>
       <div className="activePage">
-      { this.state.activePage === 'home' ? <Home /> : null }
-      { this.state.activePage === 'skills' ? <Skills /> : null }
-      { this.state.activePage === 'portfolio' ? <Portfolio /> : null }
-      { this.state.activePage === 'about' ? <About /> : null }
-      { this.state.activePage === 'contact' ? <Contact /> : null }
+      { this.state.activePage === 'home' ? <Home className="active" /> : null }
+      { this.state.activePage === 'skills' ? <Skills className="active" /> : null }
+      { this.state.activePage === 'portfolio' ? <Portfolio className="active" /> : null }
+      { this.state.activePage === 'about' ? <About className="active" /> : null }
+      { this.state.activePage === 'contact' ? <Contact className="active" /> : null }
       </div>
       <Menu
         skills={ this.showSkills }

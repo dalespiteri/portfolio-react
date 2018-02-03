@@ -5,7 +5,7 @@ class Skills extends Component {
   render() {
 
     return (
-      <div className="skillsContainer pageContainer">
+      <div className={"skillsContainer pageContainer " + this.props.className}>
 
       </div>
   );

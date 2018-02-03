@@ -5,7 +5,7 @@ class Contact extends Component {
   render() {
 
     return (
-      <div className="contactContainer pageContainer">
+      <div className={'contactContainer pageContainer ' + this.props.className} >
 
       </div>
   );
