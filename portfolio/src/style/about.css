@@ -1,3 +1,9 @@
 .aboutContainer {
-  background-color: green;
+    background: linear-gradient(#0f3744, #021116);
+}
+
+.testObject {
+  width: 50%;
+  height: 200%;
+  background-color: red;
 }
