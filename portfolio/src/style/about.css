@@ -2,8 +2,132 @@
     background: linear-gradient(#0f3744, #021116);
 }
 
-.testObject {
-  width: 50%;
-  height: 200%;
-  background-color: red;
+.aboutContent {
+    width: 80%;
+    max-width: 900px;
+    min-width: 550px; /* maintain legibility of copy but break before 600px media queries */
+    margin: auto;
+}
+
+.aboutText p {
+    background-color: white;
+    font-size: 1.15em;
+    line-height: 2em;
+    text-align: center;
+    color: #021116;
+    padding: 35px;
+    border-radius: 25px;
+    font-weight: 400;
+}
+
+.outterBubble {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* bubbles have relative positioning for shadow bubbles absolute positioning */
+}
+
+.outterBubble:before { /* askew background - outter speech bubbles */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #021116;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+    z-index: -1; /* make sure the shadows are behind (must be negative) */
+    transform: rotate(-3deg);
+    transition: transform 500ms;
+}
+
+.aboutSectionOne,
+.aboutSectionTwo {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutSectionOne {
+    margin-bottom: 75px;
+    align-items: center;
+}
+
+.aboutSectionTwo {
+    align-items: flex-end;
+}
+
+
+.aboutParagraph {
+    width: 70%;
+    position: relative; /* relative for speech arrow's absolute positioning */
+}
+
+.aboutImage {
+    width: 22%;
+}
+
+.aboutImage img {
+    width: 100%;
+}
+
+.aboutSectionOne p:after { /* first speech bubble arrow */
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* center the speech arrow with help of top position */
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent; /* adjust the angle of the top of the speech bubble arrow */
+    border-bottom: 20px solid transparent; /* adjust the angle of the bottom of the speech bubble arrow */
+    border-left: 40px solid white; /* determines the width of the arrow */
+    /* no right border necessary */
+}
+
+.aboutSectionOne p:before { /* askew background - first speech bubble */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #021116;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+    z-index: -1; /* must be negative to keep it behind all other elements */
+    transform: rotate(3deg);
+    transition: transform 500ms;
+}
+
+.aboutSectionTwo p:after { /* second speech bubble arrow, view .about-section-one for details */
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 40px solid white;
+}
+
+.aboutSectionTwo p:before { /* askew background - second speech bubble */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #021116;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+    z-index: -1; /* must be negative */
+    transform: rotate(-3deg);
+    transition: transform 500ms;
+}
+
+.bubbleConnector { /* div to make the speech bubbles connect, centered on the page */
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    margin: auto;
 }
