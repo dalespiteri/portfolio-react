@@ -1,3 +1,8 @@
+@keyframes pageSwap {
+  from { left: 100%; }
+  to { left: 0; }
+}
+
 @keyframes dropIn {
   0% {
     transform: translateY(-100%);
@@ -25,9 +30,21 @@
    }
 }
 
+*::-webkit-scrollbar {
+    /* nicer scroll bars for all */
+    width: 10px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+*::-webkit-scrollbar-thumb {
+    /* nicer scroll thumbs for all */
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .active {
-  animation-name: dropIn;
-  animation-duration: 700ms;
+  animation-name: pageSwap;
+  animation-duration: 600ms;
   animation-iteration-count: 1;
 }
 
