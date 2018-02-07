@@ -16,13 +16,18 @@ class Portfolio extends Component {
           </div>
           <div className="webpages">
             <div className="webpage bobsBurgers">
-              <img src={bobsBurgerThumb} alt="bobs burgers webpage"/>
-              <div className="webpageHover">
-                <div className="webpageInfo">
+              <div>
+                <img src={bobsBurgerThumb} alt="bobs burgers webpage"/>
+              </div>
+              <div className="webpageInfo">
+                <div>
                   <h2>Bob's Burgers: Restaurant Site</h2>
                   <p>A restaurant site based off the fictional Fox television series, Bob’s Burgers. Includes a landing page, locations, menu, and about section created using Bootstrap.</p>
                   <a href="http://dalespiteri.github.io" target="_blank">
-                    <button className="fullSiteLink">visit full site</button>
+                    <button className="fullSiteLink">full site</button>
+                  </a>
+                  <a href="" target="_blank">
+                    <button className="gitRepoButt">repository</button>
                   </a>
                 </div>
               </div>
@@ -34,7 +39,10 @@ class Portfolio extends Component {
                   <h2>The LAN Party: Podcast Site</h2>
                   <p>A single page website that uses jQuery to navigate an info panel, cast panel, latest episode, and episode list panel.</p>
                   <a href="lanPartySite/index.html" target="_blank">
-                    <button className="fullSiteLink">visit full site</button>
+                    <button className="fullSiteLink">full site</button>
+                  </a>
+                  <a href="" target="_blank">
+                    <button className="gitRepoButt">repository</button>
                   </a>
                 </div>
               </div>
@@ -46,7 +54,10 @@ class Portfolio extends Component {
                   <h2>Lords of War: Store Site</h2>
                   <p>A website for the Hobby store in Oakville, Lords of War: Games and Hobbies. My first completed site.</p>
                   <a href="lowSite/index.html" target="_blank">
-                    <button className="fullSiteLink">visit full site</button>
+                    <button className="fullSiteLink">full site</button>
+                  </a>
+                  <a href="" target="_blank">
+                    <button className="gitRepoButt">repository</button>
                   </a>
                 </div>
               </div>
