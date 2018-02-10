@@ -19,10 +19,13 @@
 
 .contactEmail {
     margin-bottom: 60px;
-    color: white;
-    font-size: 20pt;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 3px black;
+}
+
+.contactEmail p {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 3px black;
 }
 
 .contactLogoList {

@@ -29,15 +29,18 @@
 }
 
 .speechBubble {
-    text-align: center;
     position: relative; /* bubble arrow needs relative absolute positioning */
-    font-size: 1.35em;
-    line-height: 1.5em;
-    color: #366289;
     background-color: white;
-    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.speechBubble p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #366289;
+  text-align: center;
+  padding: 20px;
 }
 
 .speechBubble:before { /* speech bubble arrow - create a triangle using a mix of visible and invisible borders */

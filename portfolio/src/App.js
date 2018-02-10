@@ -53,26 +53,19 @@ class App extends Component {
   render() {
     return (
       <div className="masterContainer">
-      <div className="subActivePage">
-      { this.state.subActivePage === 'home' ? <Home /> : null }
-      { this.state.subActivePage === 'skills' ? <Skills /> : null }
-      { this.state.subActivePage === 'portfolio' ? <Portfolio /> : null }
-      { this.state.subActivePage === 'about' ? <About /> : null }
-      { this.state.subActivePage === 'contact' ? <Contact /> : null }
-      </div>
-      <div className="activePage">
-      { this.state.activePage === 'home' ? <Home className="active" /> : null }
-      { this.state.activePage === 'skills' ? <Skills className="active" /> : null }
-      { this.state.activePage === 'portfolio' ? <Portfolio className="active" /> : null }
-      { this.state.activePage === 'about' ? <About className="active" /> : null }
-      { this.state.activePage === 'contact' ? <Contact className="active" /> : null }
-      </div>
-      <Menu
-        skills={ this.showSkills }
-        portfolio= { this.showPortfolio }
-        about={ this.showAbout }
-        contact={ this.showContact }
-      />
+        <div className="page">
+          { this.state.subActivePage === 'home' ? <Home className="subActive" /> : this.state.activePage === 'home' ? <Home className="active" /> : null }
+          { this.state.subActivePage === 'skills' ? <Skills className="subActive" /> : this.state.activePage === 'skills' ? <Skills className="active" /> : null }
+          { this.state.subActivePage === 'portfolio' ? <Portfolio className="subActive" /> : this.state.activePage === 'portfolio' ? <Portfolio className="active" /> : null }
+          { this.state.subActivePage === 'about' ? <About className="subActive" /> : this.state.activePage === 'about' ? <About className="active" /> : null }
+          { this.state.subActivePage === 'contact' ? <Contact className="subActive" /> : this.state.activePage === 'contact' ? <Contact className="active" /> : null }
+        </div>
+        <Menu
+          skills={ this.showSkills }
+          portfolio= { this.showPortfolio }
+          about={ this.showAbout }
+          contact={ this.showContact }
+        />
       </div>
     );
   }
