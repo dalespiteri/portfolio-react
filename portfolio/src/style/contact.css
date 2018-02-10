@@ -1,5 +1,8 @@
 .contactContainer {
   background: linear-gradient(#8e7161, #755361);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactContent {

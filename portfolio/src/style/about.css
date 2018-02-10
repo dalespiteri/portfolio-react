@@ -16,7 +16,7 @@
     text-align: center;
     color: #021116;
     padding: 35px;
-    border-radius: 25px;
+    border-radius: 75px;
     font-weight: 400;
 }
 
@@ -70,6 +70,11 @@
 
 .aboutImage img {
     width: 100%;
+    opacity: 0;
+    animation-name: spinIn;
+    animation-delay: 500ms;
+    animation-duration: 750ms;
+    animation-fill-mode: forwards;
 }
 
 .aboutSectionOne p:after { /* first speech bubble arrow */
@@ -103,7 +108,7 @@
 .aboutSectionTwo p:after { /* second speech bubble arrow, view .about-section-one for details */
     content: '';
     position: absolute;
-    bottom: 50px;
+    bottom: 75px;
     left: -40px;
     width: 0;
     height: 0;

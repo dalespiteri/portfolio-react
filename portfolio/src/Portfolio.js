@@ -3,6 +3,7 @@ import './style/portfolio.css';
 import bobsBurgerThumb from './images/bobsBurgers.jpg';
 import lanPartyThumb from './images/lanParty.jpg';
 import lowThumb from './images/lordsOfWar.jpg';
+import triviaThumb from './images/trivia.png';
 
 class Portfolio extends Component {
   render() {
@@ -15,6 +16,23 @@ class Portfolio extends Component {
             <h1>Portfolio</h1>
           </div>
           <div className="webpages">
+            <div className="webpage triviaPage">
+              <div>
+                <img src={triviaThumb} alt="trivia webpage"/>
+              </div>
+              <div className="webpageInfo">
+                <div>
+                  <h2>Trivia: Random Trivia Game</h2>
+                  <p>A ReactJS application that uses the Open Trivia API to pull random questions in your selected category.</p>
+                  <a href="http://dalespiteri.github.io" target="_blank">
+                    <button className="fullSiteLink">full site</button>
+                  </a>
+                  <a href="" target="_blank">
+                    <button className="gitRepoButt">repository</button>
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="webpage bobsBurgers">
               <div>
                 <img src={bobsBurgerThumb} alt="bobs burgers webpage"/>

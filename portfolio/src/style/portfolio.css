@@ -11,13 +11,20 @@
     box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.35);
     margin-left: auto;
     margin-right: auto;
-    transform: perspective(1300px) rotateX(0deg);
-    transition: all 250ms;
+    transform: perspective(1300px) rotateX(-15deg);
+    transition: all 300ms;
+    margin-bottom: -250px;
+    margin-top: 0;
+}
+
+.webpages:hover .webpage {
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 
 .webpage:hover {
   border: 10px solid white;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .webpage h2 {
@@ -36,20 +43,9 @@
     z-index: 2;
 }
 
-.lanParty {
-  margin-top: -250px;
-  margin-bottom: -250px;
-  transition: all 500ms;
-}
-
-.webpages:hover .lanParty {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .webpageInfo {
   padding: 25px;
-  background-color: black;
+  background-color: #0D1027;
   color: white;
 }
 

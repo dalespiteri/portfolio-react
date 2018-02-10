@@ -1,3 +1,55 @@
 .homeContainer {
-  background-color: blue;
+  background: linear-gradient(#367e96, #1d4f89);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContent {
+  width: 30%;
+  margin: auto;
+  position: relative;
+  bottom: 20px; /* visual centering */
+}
+
+.pixelLogo {
+    width: 70%; /* smaller than the speech bubble... */
+    min-width: 150px; /* ...but not too small */
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.pixelLogo img {
+    width: 100%;
+    animation-name: spinIn;
+    animation-duration: 750ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.speechBubble {
+    text-align: center;
+    position: relative; /* bubble arrow needs relative absolute positioning */
+    font-size: 1.35em;
+    line-height: 1.5em;
+    color: #366289;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.speechBubble:before { /* speech bubble arrow - create a triangle using a mix of visible and invisible borders */
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 55%; /* off center to line up with pixel logo mouth */
+    transform: translateX(-50%);
+    /* center the speech arrow */
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom: 30px solid white;
+    border-top: 0;
 }
