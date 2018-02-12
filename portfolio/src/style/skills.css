@@ -1,3 +1,117 @@
 .skillsContainer {
-  background-color: red;
+  background: linear-gradient(#be2a2e, #9e2750);
+}
+
+.skillList {
+  list-style: none;
+  text-align: center;
+  color: white;
+  font-size: 1.75em;
+  margin-bottom: 100px;
+}
+
+.skillList li {
+  display: inline;
+  padding: 5px 20px;
+  border-right: 3px solid white;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  background: linear-gradient(transparent 50%, white 50%);
+  background-size: 200%;
+  background-position: top;
+  transition: all 250ms;
+}
+
+.skillList li:hover {
+  background-position: bottom;
+  color: #be2a2e;
+}
+
+.skillList li:last-child {
+  border-right: 0;
+}
+
+#activeSkill {
+  background-position: bottom;
+  color: #be2a2e;
+  pointer-events: none;
+}
+
+.skill {
+  width: 800px;
+  margin: auto;
+}
+
+.skillTop {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.skillHeading {
+  width: 400px;
+  height: 100%;
+  color: #021116;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 400ms 1;
+}
+
+.skillHeading span {
+  color: #be2a2e;
+}
+
+.skillHeading h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+.reactSkill h3 {
+  font-size: 1.1em;
+}
+
+.skillHeading p {
+  font-size: 1.25em;
+  text-indent: 20px;
+}
+
+.reactSkill p {
+  font-size: 1em;
+}
+
+.skillHeading p:nth-child(3) {
+  text-indent: 40px;
+}
+
+.skillHeading img {
+  width: 300px;
+}
+
+.skillHeading * {
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 2;
+}
+
+.skillImage {
+  width: 400px;
+  background-color: #021116;
+  animation: slideInLeft 400ms 1;
+  text-align: center;
+}
+
+.skillImage img {
+  height: 400px;
+}
+
+.skillBottom {
+  background-color: #be2a2e;
+  color: white;
+  padding: 70px;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
+  animation: slideDown 400ms 1;
 }

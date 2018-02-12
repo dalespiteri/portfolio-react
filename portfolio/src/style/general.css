@@ -3,31 +3,8 @@
   to { left: 0; }
 }
 
-@keyframes dropIn {
-  0% {
-    transform: translateY(-100%);
-    animation-timing-function: ease-in;
-   }
-  25% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-  50% {
-    transform: translateY(-20%);
-    animation-timing-function: ease-in;
-   }
-  75% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-   }
-  88% {
-    transform: translateY(-5%);
-    animation-timing-function: ease-in;
-   }
-  100% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-   }
+@keyframes fadeIn {
+  from { opacity: 0 }
 }
 
 @keyframes spinIn {
@@ -42,6 +19,27 @@
   100% {
     opacity: 1;
     transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0.1;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0.1;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0.1;
+    transform: translateY(-500px);
   }
 }
 
@@ -78,7 +76,7 @@ h1 {
 }
 
 .page {
-  width: 75%;
+  width: 80%;
   height: 100vh;
   overflow: hidden;
   position: absolute;
@@ -97,10 +95,12 @@ h1 {
   top: 0;
   left: 0;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .header {

@@ -3,6 +3,10 @@
     overflow-y: auto;
 }
 
+.content {
+  animation: fadeIn 1s 1;
+}
+
 .webpage {
     width: 50%;
     min-width: 500px; /* don't want them to shrink TOO much on medium size screens and tablets */
@@ -15,6 +19,10 @@
     transition: all 300ms;
     margin-bottom: -250px;
     margin-top: 0;
+}
+
+.webpage:last-child {
+  margin-bottom: 0;
 }
 
 .webpages:hover .webpage {

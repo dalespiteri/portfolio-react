@@ -1,6 +1,6 @@
 .menuContainer {
   height: 100vh;
-  width: 25%;
+  width: 20%;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -11,24 +11,29 @@
 }
 
 .menuContainer ul {
-  width: 45%;
+  width: 60%;
   list-style: none;
 }
 
 .menuContainer ul li button {
   width: 100%;
-  height: 100%;
   margin-bottom: 30px;
   padding: 20px;
   background: white;
-  color: gray;
-  border-radius: 40px;
-  border: 4px solid gray;
-  transition: all 250ms;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.25em;
+  color: #021116;
+  border: none;
+  cursor: pointer;
+}
+
+.menuContainer ul li button:focus {
+  outline: none;
 }
 
 .menuContainer ul li button:hover {
-  border-radius: 0;
+  background-color: #021116;
+  color: white;
 }
 
 .menuContainer ul li:last-child {
