@@ -12,7 +12,7 @@ class Home extends Component {
             <img src={ pixelLogo } alt="Pixel Logo" />
           </div>
           <div className="speechBubble">
-            <p>Hi, I'm Dale.<br />I design and build web pages.<br />How can I help you?</p>
+            <p>Hi, I'm Dale.<br />I design and develop web pages.<br />How can I help you?</p>
           </div>
         </div>
       </div>

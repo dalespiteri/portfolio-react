@@ -5,7 +5,6 @@
 .aboutContent {
     width: 80%;
     max-width: 900px;
-    min-width: 550px; /* maintain legibility of copy but break before 600px media queries */
     margin: auto;
 }
 
@@ -136,4 +135,50 @@
     height: 40px;
     background-color: white;
     margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutSectionOne,
+  .aboutSectionTwo {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .aboutSectionOne {
+    flex-direction: column-reverse;
+  }
+  .aboutSectionTwo {
+    flex-direction: column;
+  }
+  .aboutContent {
+    width: 90%;
+  }
+  .outterBubble {
+    width: 100%;
+  }
+  .outterBubble:first-child {
+    margin-bottom: 25px;
+  }
+  .aboutParagraph {
+    width: 100%;
+  }
+  .aboutText p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    padding: 25px;
+    border-radius: 0;
+  }
+  .aboutImage {
+    width: 35%;
+    margin-bottom: 25px;
+  }
+  .bubbleConnector,
+  .outterBubble:before,
+  .aboutSectionTwo p:after,
+  .aboutSectionOne p:after,
+  .aboutSectionOne p:before,
+  .aboutSectionTwo p:before {
+    display: none;
+  }
 }

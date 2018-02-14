@@ -11,15 +11,14 @@
 }
 
 .menuContainer ul {
-  width: 60%;
+  width: 100%;
   list-style: none;
 }
 
 .menuContainer ul li button {
   width: 100%;
-  margin-bottom: 30px;
   padding: 20px;
-  background: white;
+  background-color: white;
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.25em;
   color: #021116;
@@ -36,7 +35,9 @@
   color: white;
 }
 
-.menuContainer ul li:last-child {
-  /* ensure proper centering */
-  margin-bottom: 0;
+@media only screen and (max-width: 480px) {
+  .menuContainer {
+    width: 100%;
+    transform: translateX(100%);
+  }
 }

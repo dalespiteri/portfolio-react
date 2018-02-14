@@ -15,7 +15,9 @@ class About extends Component {
             <h1>About Me</h1>
           </div>
           <div className="aboutText">
-            <p className="outterBubble topBubble">Hi, I’m Dale, and I’m a designer.</p>
+            <div className="outterBubble">
+              <p>Hi, I’m Dale, and I’m a designer.</p>
+            </div>
             <div className="bubbleConnector"></div>
             <div className="aboutSectionOne">
               <div className="aboutParagraph">
@@ -30,7 +32,9 @@ class About extends Component {
               </div>
             </div>
             <div className="bubbleConnector"></div>
-            <p className="outterBubble">So now, I’m Dale, and I'm a web designer.</p>
+            <div className="outterBubble">
+              <p>So now, I’m Dale, and I'm a web designer.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -54,7 +54,7 @@ class App extends Component {
     return (
       <div className="masterContainer">
         <div className="page">
-          { this.state.subActivePage === 'home' ? <Home className="subActive" /> : this.state.activePage === 'home' ? <Home className="active" /> : null }
+          { this.state.subActivePage === 'home' ? <Home className="subActive" /> : this.state.activePage === 'home' ? <Home /> : null }
           { this.state.subActivePage === 'skills' ? <Skills className="subActive" /> : this.state.activePage === 'skills' ? <Skills className="active" /> : null }
           { this.state.subActivePage === 'portfolio' ? <Portfolio className="subActive" /> : this.state.activePage === 'portfolio' ? <Portfolio className="active" /> : null }
           { this.state.subActivePage === 'about' ? <About className="subActive" /> : this.state.activePage === 'about' ? <About className="active" /> : null }

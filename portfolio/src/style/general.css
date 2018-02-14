@@ -1,6 +1,5 @@
 @keyframes pageSwap {
-  from { left: 100%; }
-  to { left: 0; }
+  from { transform: translateX(100%);}
 }
 
 @keyframes fadeIn {
@@ -68,34 +67,36 @@ h1 {
   text-shadow: 5px 5px 0 rgba(0,0,0,0.5);
 }
 
-.active {
-  animation-name: pageSwap;
-  animation-duration: 600ms;
-  animation-iteration-count: 1;
-  z-index: 2;
+.masterContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .page {
   width: 80%;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.subActive {
-  z-index: 1;
+  height: 100%;
+  position: relative;
 }
 
 .pageContainer {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
   left: 0;
   overflow-y: auto;
-  overflow-x: hidden;
+}
+
+.active {
+  animation-name: pageSwap;
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+  z-index: 0;
+}
+
+.subActive {
+  z-index: -1;
 }
 
 .content {
@@ -108,4 +109,21 @@ h1 {
   color: white;
   text-align: center;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+  .page {
+    width: 100%;
+  }
+  .content {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  h1 {
+    font-size: 1em;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  }
+  .header {
+    margin-bottom: 75px;
+  }
 }

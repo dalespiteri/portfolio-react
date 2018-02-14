@@ -7,21 +7,17 @@
 }
 
 .homeContent {
-  width: 30%;
-  margin: auto;
   position: relative;
   bottom: 20px; /* visual centering */
 }
 
 .pixelLogo {
-    width: 70%; /* smaller than the speech bubble... */
-    min-width: 150px; /* ...but not too small */
-    margin: auto;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .pixelLogo img {
-    width: 100%;
+    width: 250px;
     animation-name: spinIn;
     animation-duration: 750ms;
     animation-iteration-count: 1;
@@ -55,4 +51,11 @@
     border: 15px solid transparent;
     border-bottom: 30px solid white;
     border-top: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .speechBubble p {
+    font-size: 1em;
+    padding: 25px;
+  }
 }

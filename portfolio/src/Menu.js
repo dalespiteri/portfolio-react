@@ -13,10 +13,18 @@ class Menu extends Component {
     return (
       <div className="menuContainer">
         <ul>
-          <li><button onClick={this.props.skills}>skills</button></li>
-          <li><button onClick={this.props.portfolio}>portfolio</button></li>
-          <li><button onClick={this.props.about}>about me</button></li>
-          <li><button onClick={this.props.contact}>contact</button></li>
+        <li>
+          <button onClick={this.props.skills}>skills</button>
+        </li>
+        <li>
+          <button onClick={this.props.portfolio}>portfolio</button>
+        </li>
+        <li>
+          <button onClick={this.props.about}>about me</button>
+        </li>
+        <li>
+          <button onClick={this.props.contact}>contact</button>
+        </li>
         </ul>
       </div>
     );
