@@ -11,7 +11,7 @@ class Menu extends Component {
     );
 
     return (
-      <div className="menuContainer">
+      <div className={"menuContainer " + this.props.mobileMenu}>
         <ul>
         <li>
           <button onClick={this.props.skills}>skills</button>

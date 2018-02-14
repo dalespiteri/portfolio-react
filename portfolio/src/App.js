@@ -14,45 +14,63 @@ class App extends Component {
     super(props);
     this.state = {
       activePage: 'home',
-      subActivePage: ''
+      subActivePage: '',
+      offScreenMenu: true
     };
     this.showSkills = this.showSkills.bind(this);
     this.showPortfolio = this.showPortfolio.bind(this);
     this.showAbout = this.showAbout.bind(this);
     this.showContact = this.showContact.bind(this);
+    this.showMenu = this.showMenu.bind(this);
   }
 
   showSkills() {
     this.setState({
       subActivePage: this.state.activePage,
-      activePage: 'skills'
+      activePage: 'skills',
+      offScreenMenu: !this.state.offScreenMenu
     });
   }
 
   showPortfolio() {
     this.setState({
       subActivePage: this.state.activePage,
-      activePage: 'portfolio'
+      activePage: 'portfolio',
+      offScreenMenu: !this.state.offScreenMenu
     });
   }
 
   showAbout() {
     this.setState({
       subActivePage: this.state.activePage,
-      activePage: 'about'
+      activePage: 'about',
+      offScreenMenu: !this.state.offScreenMenu
     });
   }
 
   showContact() {
     this.setState({
       subActivePage: this.state.activePage,
-      activePage: 'contact'
+      activePage: 'contact',
+      offScreenMenu: !this.state.offScreenMenu
+    });
+  }
+
+  showMenu() {
+    this.setState({
+      offScreenMenu: !this.state.offScreenMenu
     });
   }
 
   render() {
     return (
       <div className="masterContainer">
+        <div class={this.state.offScreenMenu ? "mobileHamburger" : "mobileHamburger hamburgerClose"} onClick={this.showMenu}>
+          <div class="hamBar topBar"></div>
+          <div class="hamBar middleBar middleBarOne"></div>
+          <div class="hamBar middleBar middleBarTwo"></div>
+          <div class="hamBar bottomBar"></div>
+        </div>
         <div className="page">
           { this.state.subActivePage === 'home' ? <Home className="subActive" /> : this.state.activePage === 'home' ? <Home /> : null }
           { this.state.subActivePage === 'skills' ? <Skills className="subActive" /> : this.state.activePage === 'skills' ? <Skills className="active" /> : null }
@@ -65,6 +83,7 @@ class App extends Component {
           portfolio= { this.showPortfolio }
           about={ this.showAbout }
           contact={ this.showContact }
+          mobileMenu={ this.state.offScreenMenu ? null : "onScreenMenu" }
         />
       </div>
     );
