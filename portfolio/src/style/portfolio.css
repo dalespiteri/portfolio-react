@@ -63,8 +63,8 @@
     padding: 10px 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 25px;
+    margin-right: 25px;
     color: white;
     background-color: transparent;
 }
@@ -72,4 +72,29 @@
 .webpage button:hover {
     background-color: white;
     color: black;
+}
+
+@media only screen and (max-width:480px) {
+  .webpage {
+    width: 100%;
+    min-width: 0;
+    transform: none;
+    margin-bottom: 25px;
+    text-align: center;
+    border-width: 5px;
+  }
+  .webpage h2 {
+    font-size: 1.5em;
+  }
+  .webpage p {
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+    line-height: 1.5em;
+  }
+  .webpage button {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
