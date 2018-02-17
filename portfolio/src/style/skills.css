@@ -17,7 +17,8 @@
   font-family: 'Share Tech Mono', monospace;
   cursor: pointer;
   background: linear-gradient(transparent 50%, white 50%);
-  background-size: 200%;
+  background-size: 202%;
+  /* some devices had a single pixel leaking over the edge and the background wasn't fully hidden, creating a line. So 202% gives the background a buffer to prevent this */
   background-position: top;
   transition: all 250ms;
 }

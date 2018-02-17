@@ -43,7 +43,7 @@ class Portfolio extends Component {
               </div>
               <div className="webpageInfo">
                 <div>
-                  <h2>Score Keeper</h2>
+                  <h2>Score Keeper: Web Application</h2>
                   <p>A score keeping application using Javascript and object oriented programming.</p>
                   <a href="https://dalespiteri.github.io/scoreKeeper/index.html" target="_blank">
                     <button className="fullSiteLink">full site</button>
