@@ -22,9 +22,11 @@
   transition: all 250ms;
 }
 
-.skillList li:hover {
-  background-position: bottom;
-  color: #be2a2e;
+@media only screen and (min-width: 900px) {
+  .skillList li:hover {
+    background-position: bottom;
+    color: #be2a2e;
+  }
 }
 
 .skillList li:last-child {
@@ -38,7 +40,8 @@
 }
 
 .skill {
-  width: 800px;
+  width: 80%;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -49,7 +52,7 @@
 }
 
 .skillHeading {
-  width: 400px;
+  width: 50%;
   height: 100%;
   color: #021116;
   background-color: white;
@@ -87,7 +90,8 @@
 }
 
 .skillHeading img {
-  width: 300px;
+  width: 75%;
+  max-width: 300px;
 }
 
 .skillHeading * {
@@ -96,14 +100,15 @@
 }
 
 .skillImage {
-  width: 400px;
+  width: 50%;
   background-color: #021116;
   animation: slideInLeft 400ms 1;
   text-align: center;
 }
 
 .skillImage img {
-  height: 400px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .mobileHeader {
@@ -126,20 +131,49 @@
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1200px) {
   .skillList {
-    margin-bottom: 75px;
+    font-size: 1.1em;
+  }
+  .skillTop {
+    height: 250px;
+  }
+  .skillHeading h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+  }
+  .reactSkill h3 {
+    font-size: 0.8em;
+  }
+
+  .skillHeading p {
+    font-size: 1.25em;
+    text-indent: 20px;
+  }
+
+  .reactSkill p {
+    font-size: 0.8em;
+  }
+
+  .skillHeading p:nth-child(3) {
+    text-indent: 40px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .skillList {
     font-size: 1.25em;
   }
   .skillList li {
     display: block;
-    margin-bottom: 25px;
-    padding: 0;
+    width: 75%;
+    padding: 15px;
     border-right: 0;
     background: none;
+    margin: auto;
   }
   #activeSkill {
-    color: white;
+    background-color: white;
   }
   .skill {
     width: 100%;

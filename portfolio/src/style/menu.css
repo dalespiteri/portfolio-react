@@ -18,12 +18,15 @@
 .menuContainer ul li button {
   width: 100%;
   padding: 20px;
-  background-color: white;
+  background: linear-gradient(transparent 50%, #021116 50%);
+  background-size: 200%;
+  background-position: top;
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.25em;
   color: #021116;
   border: none;
   cursor: pointer;
+  transition: all 250ms;
 }
 
 .menuContainer ul li button:focus {
@@ -31,7 +34,7 @@
 }
 
 .menuContainer ul li button:hover {
-  background-color: #021116;
+  background-position: bottom;
   color: white;
 }
 
@@ -63,9 +66,10 @@
   bottom: 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 900px) {
   .menuContainer {
     width: 100%;
+    opacity: 0.95;
     transform: translateX(-100%);
     transition: all 600ms;
   }

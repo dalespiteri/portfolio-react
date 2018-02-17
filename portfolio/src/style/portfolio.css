@@ -5,17 +5,41 @@
 
 .content {
   animation: fadeIn 1s 1;
+  text-align: center;
+}
+
+.portfolioGitRepoButton {
+  width: 50%;
+  min-width: 600px;
+  border: 1px solid white;
+  margin-bottom: 100px;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.portfolioGitRepoButton:hover {
+  background-color: white;
+  color: #0D1027;
+}
+
+.webpages {
+  width: 50%;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .webpage {
-    width: 50%;
-    min-width: 500px; /* don't want them to shrink TOO much on medium size screens and tablets */
+    width: 100%;
     border: 10px solid rgba(255, 255, 255, 0.5);
     position: relative; /* for the absolute positioning of hover effects */
     box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.35);
     margin-left: auto;
     margin-right: auto;
-    transform: perspective(1300px) rotateX(-15deg);
     transition: all 300ms;
     margin-bottom: -250px;
     margin-top: 0;
@@ -25,15 +49,14 @@
   margin-bottom: 0;
 }
 
-.webpages:hover .webpage {
-  margin-top: 65px;
-  margin-bottom: 65px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.35);
-}
-
-.webpage:hover {
-  border: 10px solid white;
-  transform: scale(1.05);
+@media only screen and (min-width: 900px) {
+  .webpages:hover .webpage {
+    border: 10px solid white;
+    margin-bottom: 75px;
+  }
+  .webpage:hover {
+    transform: scale(1.02);
+  }
 }
 
 .webpage h2 {
@@ -59,28 +82,34 @@
 }
 
 .webpage button {
+  width: 40%;
     border: 1px solid white;
     padding: 10px 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 25px;
-    margin-right: 25px;
+    margin: 25px 10px 0 10px;
     color: white;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .webpage button:hover {
     background-color: white;
-    color: black;
+    color: #0D1027;
 }
 
-@media only screen and (max-width:480px) {
-  .webpage {
+@media only screen and (max-width:900px) {
+  .portfolioGitRepoButton {
+    width: 75%;
+    min-width: 250px;
+    margin-bottom: 75px;
+  }
+  .webpages {
     width: 100%;
     min-width: 0;
-    transform: none;
+  }
+  .webpage {
     margin-bottom: 25px;
-    text-align: center;
     border-width: 5px;
   }
   .webpage h2 {
