@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import './style/cssReset.css';
+import './style/general.css';
 import Menu from './Menu';
 import Home from './Home';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
 import About from './About';
 import Contact from './Contact';
-import './style/cssReset.css';
-import './style/general.css';
 
 class App extends Component {
 

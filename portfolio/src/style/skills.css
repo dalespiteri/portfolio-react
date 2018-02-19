@@ -5,33 +5,39 @@
 .skillList {
   list-style: none;
   text-align: center;
-  color: white;
-  font-size: 1.75em;
   margin-bottom: 100px;
 }
 
 .skillList li {
   display: inline;
+}
+
+.skillListButton {
   padding: 5px 20px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
   border-right: 3px solid white;
   font-family: 'Share Tech Mono', monospace;
+  font-size: 1.75em;
+  color: white;
   cursor: pointer;
   background: linear-gradient(transparent 50%, white 50%);
-  background-size: 202%;
+  background-size: 100% 200%;
   /* some devices had a single pixel leaking over the edge and the background wasn't fully hidden, creating a line. So 202% gives the background a buffer to prevent this */
   background-position: top;
   transition: all 250ms;
 }
 
 @media only screen and (min-width: 900px) {
-  .skillList li:hover {
+  .skillListButton:hover {
     background-position: bottom;
     color: #be2a2e;
   }
 }
 
-.skillList li:last-child {
-  border-right: 0;
+.skillList li:last-child button {
+  border-right: none;
 }
 
 #activeSkill {
@@ -133,7 +139,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .skillList {
+  .skillListButton {
     font-size: 1.1em;
   }
   .skillTop {
@@ -167,6 +173,8 @@
   }
   .skillList li {
     display: block;
+  }
+  .skillListButton {
     width: 75%;
     padding: 15px;
     border-right: 0;
