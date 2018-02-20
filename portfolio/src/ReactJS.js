@@ -7,7 +7,7 @@ class ReactJS extends Component {
       <div className="reactSkill">
         <div className="skillTop">
           <div className="skillHeading">
-            <div>
+            <div className="reactSkillHeading">
               <h3>class <span>ReactJS</span> extends Component &#123;</h3>
               <p>render() &#123;</p>
               <p>return( The Tool Kit )</p>

@@ -58,51 +58,39 @@ class Skills extends Component {
           <ul>
 
             <li>
-              <a href="#skill">
                 <button onClick={this.showHTML} className="skillListButton" id={this.state.activeSkill === 'HTML'
                     ? "activeSkill"
                     : null}>html</button>
-              </a>
             </li>
 
             <li>
-              <a href="#skill">
                 <button onClick={this.showCSS} className="skillListButton" id={this.state.activeSkill === 'CSS'
                     ? "activeSkill"
                     : null}>css</button>
-              </a>
             </li>
 
             <li>
-              <a href="#skill">
                 <button onClick={this.showJavascript} className="skillListButton" id={this.state.activeSkill === 'Javascript'
                     ? "activeSkill"
                     : null}>javascript</button>
-              </a>
             </li>
 
             <li>
-              <a href="#skill">
                 <button onClick={this.showReactJS} className="skillListButton" id={this.state.activeSkill === 'ReactJS'
                     ? "activeSkill"
                     : null}>reactJS</button>
-              </a>
             </li>
 
             <li>
-              <a href="#skill">
                 <button onClick={this.showIllustrator} className="skillListButton" id={this.state.activeSkill === 'Illustrator'
                     ? "activeSkill"
                     : null}>illustrator</button>
-              </a>
             </li>
 
             <li>
-              <a href="#skill">
                 <button onClick={this.showPhotoshop} className="skillListButton" id={this.state.activeSkill === 'Photoshop'
                     ? "activeSkill"
                     : null}>photoshop</button>
-              </a>
             </li>
 
           </ul>

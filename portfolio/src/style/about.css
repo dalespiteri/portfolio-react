@@ -142,7 +142,7 @@
   .aboutSectionTwo {
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .aboutSectionOne {
     flex-direction: column-reverse;
@@ -157,7 +157,7 @@
     width: 100%;
   }
   .outterBubble:first-child {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .aboutParagraph {
     width: 100%;
@@ -172,7 +172,7 @@
   .aboutImage {
     width: 35%;
     max-width: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .bubbleConnector,
   .outterBubble:before,

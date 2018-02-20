@@ -56,6 +56,7 @@
   background-color: white;
   position: absolute;
   transition: all 600ms;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
 }
 
 .middleBar {
@@ -89,8 +90,10 @@
   }
   .hamburgerClose .middleBarOne {
     transform: translateY(-50%) rotate(40deg);
+    box-shadow: none;
   }
   .hamburgerClose .middleBarTwo {
     transform: translateY(-50%) rotate(-40deg);
+    box-shadow: none;
   }
 }

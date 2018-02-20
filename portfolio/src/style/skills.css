@@ -88,7 +88,7 @@
   text-indent: 20px;
 }
 
-.reactSkill p {
+.reactSkillHeading p {
   font-size: 1em;
 }
 
@@ -158,7 +158,7 @@
     text-indent: 20px;
   }
 
-  .reactSkill p {
+  .reactSkillHeading p {
     font-size: 0.8em;
   }
 
@@ -213,7 +213,7 @@
     padding: 15px;
   }
   .skillBottom {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 300;
     text-align: center;
     line-height: 1.5em;
