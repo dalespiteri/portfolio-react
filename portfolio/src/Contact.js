@@ -14,7 +14,7 @@ class Contact extends Component {
         <div className="contactContent content">
             <img src={logoBandW} className="contactLogo" alt="black and white pixel face logo" />
             <div className="contactEmail">
-                <p>dalespiteri@gmail.com</p>
+                <a href="mailto:dalespiteri@gmail.com"><p>dalespiteri@gmail.com</p></a>
             </div>
             <ul className="contactLogoList">
                 <a href="http://www.linkedin.com/in/dalespiteri" target="_blank"><li><img src={linkedIn} className="contactSubLogo" alt="linked in logo" /></li></a>
