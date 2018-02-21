@@ -2,13 +2,6 @@
   background: linear-gradient(#8e7161, #755361);
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-height: 550px) {
-  .contactContainer {
-    display: block;
-  }
 }
 
 .contactContent {
@@ -18,13 +11,13 @@
 .contactLogo {
     width: 20%;
     min-width: 200px;
+    margin-bottom: 50px;
     position: relative;
     left: 20px; /* visually center the logo */
-    margin-bottom: 60px;
 }
 
 .contactEmail {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .contactEmail p {
@@ -36,7 +29,7 @@
 
 .contactLogoList {
     list-style: none;
-    margin: 0;
+    margin-bottom: 50px;
     padding: 0;
 }
 
@@ -58,6 +51,38 @@
 .contactLogoList img {
     width: 6%;
     min-width: 70px
+}
+
+.contactForm {
+  width: 600px;
+  margin: auto;
+  padding: 50px;
+  background-color: white;
+  text-align: right;
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.25);
+}
+
+.contactForm .formIDs input,
+.contactForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid gray;
+  font-family: monospace;
+}
+
+.contactForm textarea {
+  height: 100px;
+}
+
+.formSubmit {
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 900px) {

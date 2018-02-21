@@ -21,8 +21,19 @@ class Contact extends Component {
                 <a href="https://github.com/dalespiteri" target="_blank"><li><img src={gitHub} className="contactSubLogo" alt="git hub logo" /></li></a>
                 <a href="https://plus.google.com/+DaleSpiteri" target="_blank"><li><img src={googlePlus} className="contactSubLogo" alt="google plus logo" /></li></a>
             </ul>
+            <div className="contactForm">
+              <form action="https://formspree.io/dalespiteri@gmail.com" method="POST">
+                <div className="formIDs">
+                  <input type="text" name="name" placeholder="name" />
+                  <input type="email" name="replyto" placeholder="email" />
+                </div>
+                <div className="formMessage">
+                  <textarea type="text" name="message" placeholder="message" />
+                </div>
+                <input className="formSubmit" type="submit" value="send" />
+              </form>
+            </div>
         </div>
-
       </div>
   );
   }
