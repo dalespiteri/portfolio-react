@@ -72,6 +72,11 @@
   font-family: monospace;
 }
 
+.contactForm .formIDs input:focus,
+.contactForm textarea:focus {
+  outline: 2px solid var(--darkBlue);
+}
+
 .contactForm textarea {
   height: 100px;
 }
