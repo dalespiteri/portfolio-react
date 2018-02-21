@@ -65,11 +65,11 @@ class App extends Component {
   render() {
     return (
       <div className="masterContainer">
-        <div class={this.state.offScreenMenu ? "mobileHamburger" : "mobileHamburger hamburgerClose"} onClick={this.showMenu}>
-          <div class="hamBar topBar"></div>
-          <div class="hamBar middleBar middleBarOne"></div>
-          <div class="hamBar middleBar middleBarTwo"></div>
-          <div class="hamBar bottomBar"></div>
+        <div className={this.state.offScreenMenu ? "mobileHamburger" : "mobileHamburger hamburgerClose"} onClick={this.showMenu}>
+          <div className="hamBar topBar"></div>
+          <div className="hamBar middleBar middleBarOne"></div>
+          <div className="hamBar middleBar middleBarTwo"></div>
+          <div className="hamBar bottomBar"></div>
         </div>
         <div className="page">
           { this.state.subActivePage === 'home' ? <Home className="subActive" /> : this.state.activePage === 'home' ? <Home /> : null }

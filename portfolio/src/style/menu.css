@@ -18,13 +18,13 @@
 .menuContainer ul li button {
   width: 100%;
   padding: 20px;
-  background: linear-gradient(transparent 50%, #021116 50%);
+  background: linear-gradient(transparent 50%, var(--darkBlue) 50%);
   background-size: 100% 200%;
   background-position: top;
   /* some devices had a single pixel leaking over the edge and the background wasn't fully hidden, creating a line. So 202% gives the background a buffer to prevent this */
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.25em;
-  color: #021116;
+  color: var(--darkBlue);
   border: none;
   cursor: pointer;
   transition: all 250ms;
@@ -82,7 +82,7 @@
     display: block;
   }
   .hamburgerClose .hamBar {
-    background-color: #021116;
+    background-color: var(--darkBlue);
   }
   .hamburgerClose .topBar,
   .hamburgerClose .bottomBar {

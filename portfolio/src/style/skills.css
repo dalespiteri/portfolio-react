@@ -61,7 +61,7 @@
 .skillHeading {
   width: 50%;
   height: 100%;
-  color: #021116;
+  color: var(--darkBlue);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@
 
 .skillImage {
   width: 50%;
-  background-color: #021116;
+  background-color: var(--darkBlue);
   animation: slideInLeft 400ms 1;
   text-align: center;
 }

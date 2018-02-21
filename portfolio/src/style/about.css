@@ -1,5 +1,5 @@
 .aboutContainer {
-    background: linear-gradient(#0f3744, #021116);
+    background: linear-gradient(#0f3744, var(--darkBlue));
 }
 
 .aboutContent {
@@ -14,7 +14,7 @@
     line-height: 2em;
     letter-spacing: 1px;
     text-align: center;
-    color: #021116;
+    color: var(--darkBlue);
     padding: 40px;
     border-radius: 10px;
     font-weight: 400;
@@ -32,7 +32,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #021116;
+    background-color: var(--darkBlue);
     left: 0;
     top: 0;
     border-radius: 25px;
@@ -96,7 +96,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #021116;
+    background-color: var(--darkBlue);
     left: 0;
     top: 0;
     border-radius: 25px;
@@ -121,7 +121,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #021116;
+    background-color: var(--darkBlue);
     left: 0;
     top: 0;
     border-radius: 25px;
