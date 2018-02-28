@@ -108,7 +108,10 @@
   top: 2px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {  
+  .contactContent {
+    padding-top: 75px;
+  }
   .contactEmail p {
     font-size: 1.25em;
   }

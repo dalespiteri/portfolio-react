@@ -10,6 +10,9 @@
   .homeContainer {
     justify-content: flex-start;
   }
+  .homeContent {
+    margin-top: 75px;
+  }
 }
 
 .homeContent {

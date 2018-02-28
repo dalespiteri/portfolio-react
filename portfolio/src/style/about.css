@@ -150,7 +150,7 @@
   .aboutSectionTwo {
     flex-direction: column;
   }
-  .aboutContent {
+  .aboutBlurbContainer {
     width: 90%;
   }
   .outterBubble {
