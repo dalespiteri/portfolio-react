@@ -4,6 +4,7 @@
 
 .contactContent {
     text-align: center;
+    padding-top: 250px;
 }
 
 .contactLogo {
@@ -70,11 +71,15 @@
   border: none;
   border-bottom: 2px solid gray;
   font-family: monospace;
+  outline-color: rgba(0,0,0,0);
+  transition: outline-color 500ms;
 }
 
 .contactForm .formIDs input:focus,
 .contactForm textarea:focus {
-  outline: 2px solid var(--darkBlue);
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--darkBlue);
 }
 
 .contactForm textarea {
@@ -89,13 +94,14 @@
   font-size: 1em;
   letter-spacing: 2px;
   cursor: pointer;
-  transition: background-color 200ms, top 50ms;
+  transition: background-color 200ms, transform 100ms, top 50ms;
   position: relative;
   top: 0;
 }
 
 .formSubmit:hover {
   background-color: #052935;
+  animation: shake 350ms linear infinite;
 }
 
 .formSubmit:active {

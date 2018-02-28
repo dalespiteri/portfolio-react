@@ -23,7 +23,7 @@
 
 .portfolioGitRepoButton:hover {
   background-color: white;
-  color: #0D1027;
+  color: var(--darkBlue);
 }
 
 .webpages {
@@ -77,7 +77,7 @@
 
 .webpageInfo {
   padding: 25px;
-  background-color: #0D1027;
+  background-color: var(--darkBlue);
   color: white;
 }
 

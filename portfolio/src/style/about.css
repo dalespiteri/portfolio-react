@@ -2,10 +2,10 @@
     background: linear-gradient(#0f3744, var(--darkBlue));
 }
 
-.aboutContent {
-    width: 80%;
-    max-width: 900px;
-    margin: auto;
+.aboutBlurbContainer {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
 }
 
 .aboutText p {

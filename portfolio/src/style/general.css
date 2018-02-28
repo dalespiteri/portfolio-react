@@ -55,6 +55,13 @@
   }
 }
 
+@keyframes shake {
+  25% {transform: rotate(-2deg);}
+  50% {transform: rotate(0);}
+  75% {transform: rotate(2deg);}
+  100% {transform: rotate(0);}
+}
+
 @media only screen and (min-width: 900px) {
   /* only want custom scroll bars on larger devices */
   *::-webkit-scrollbar {
@@ -81,6 +88,7 @@ h1 {
   font-family: 'Unica One', sans-serif;
   font-size: 2.5em;
   text-shadow: 5px 5px 0 rgba(0,0,0,0.5);
+  padding: 150px 0;
 }
 
 .masterContainer {
@@ -116,8 +124,7 @@ h1 {
 }
 
 .content {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
 }
 
 .header {
@@ -125,6 +132,7 @@ h1 {
   color: white;
   text-align: center;
   margin-bottom: 100px;
+  background-color: rgba(0,0,0,0.25);
 }
 
 @media only screen and (max-width: 1200px) {
