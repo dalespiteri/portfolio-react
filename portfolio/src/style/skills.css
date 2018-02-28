@@ -13,7 +13,7 @@
 }
 
 .skillListButton {
-  padding: 5px 20px;
+  padding: 10px 25px;
   border-top: none;
   border-left: none;
   border-bottom: none;
@@ -32,7 +32,7 @@
 @media only screen and (min-width: 900px) {
   .skillListButton:hover {
     background-position: bottom;
-    color: #be2a2e;
+    color: var(--darkBlue);
   }
 }
 
@@ -42,7 +42,7 @@
 
 #activeSkill {
   background-position: bottom;
-  color: #be2a2e;
+  color: var(--darkBlue);
   pointer-events: none;
 }
 
@@ -170,20 +170,16 @@
 
 @media only screen and (max-width: 900px) {
   .skillList {
-    font-size: 1.25em;
+    margin-bottom: 10px;
   }
   .skillList li {
-    display: block;
+    display: inline;
   }
   .skillListButton {
-    width: 75%;
-    padding: 15px;
+    padding: 5px 10px;
     border-right: 0;
     background: none;
     margin: auto;
-  }
-  #activeSkill {
-    background-color: white;
   }
   .skill {
     width: 100%;
