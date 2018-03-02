@@ -55,11 +55,13 @@
   }
 }
 
-@keyframes shake {
-  25% {transform: rotate(-2deg);}
-  50% {transform: rotate(0);}
-  75% {transform: rotate(2deg);}
-  100% {transform: rotate(0);}
+@keyframes jellyPulse {
+  15% {transform: perspective(1px) scaleY(1.15) scaleX(0.85);}
+  30% {transform: perspective(1px) scaleY(0.85) scaleX(1.15);}
+  45% {transform: perspective(1px) scaleY(1.1) scaleX(0.9);}
+  60% {transform: perspective(1px) scaleY(0.9) scaleX(1.1);}
+  75% {transform: perspective(1px) scaleY(1.05) scaleX(0.95);}
+  90% {transform: perspective(1px) scaleY(0.95) scaleX(1.05);}
 }
 
 @media only screen and (min-width: 900px) {
